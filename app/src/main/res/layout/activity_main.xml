@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ciano"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36dp"
+        android:text="Calcolatrice"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titolo"/>
+
+    <Button
+        android:id="@+id/somma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titolo"
+        android:layout_toLeftOf="@+id/spaziocentrale"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:text="+5"
+        android:textSize="36dp"
+        app:backgroundTint="@color/ciano"/>
+
+    <Space
+        android:id="@+id/spaziocentrale"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titolo"/>
+
+    <Button
+        android:id="@+id/sottrazione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titolo"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/spaziocentrale"
+        android:background="@android:color/white"
+        android:text="-5"
+        android:textSize="36dp"
+        app:backgroundTint="@color/lightblue"/>
+
+
+    <Button
+        android:id="@+id/incremento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/somma"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:text="+"
+        android:textSize="36dp"
+        app:backgroundTint="@color/lightblue"/>
+
+    <Button
+        android:id="@+id/decremento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incremento"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:text="-"
+        android:textSize="36dp"
+        app:backgroundTint="@color/lightblue"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decremento"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="40dp"
+        android:textSize="36dp"
+        app:backgroundTint="@color/verde"
+        android:textColor="@color/white"
+        android:text="Reset"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
